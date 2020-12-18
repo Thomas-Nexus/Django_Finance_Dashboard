@@ -11,24 +11,26 @@ Django site utilising the Yahoo Finance API with Chart.JS
 # Technologies
 ## Languages/Packages:
 
-- Python 3.8.3
-- Django 3.1.3
-- Pandas
-- YFinance
-- JavaScript
-- HTML5
-- CSS
+    - Python 3.8.3
+    - Django 3.1.3
+    - Pandas
+    - YFinance
+    - JavaScript
+    - HTML5
+    - CSS
 
 ## Editor:
 
-- PyCharm/Command
-- Command Line
+    - PyCharm/Command
+    - Command Line
 
 ## User Features:
 
-- View daily closing price action for 7 asset classes in the financial markets.
-- View line graphs in 2 time formats (previous 30 days & 240 days)
-- View asset class performance for both time periods
-- Charts will dynamically update to display the most recent price data.
+    - View daily closing price action for 7 asset classes in the financial markets.
+    - View line graphs in 2 time formats (previous 30 days & 240 days)
+    - View asset class performance for both time periods
+    - Charts will dynamically update to display the most recent price data.
 
 ## Example Screenshot:
+
+![Slide1](https://user-images.githubusercontent.com/72507931/102626800-356ccd00-413f-11eb-9af6-5bbbf6330b33.JPG)
