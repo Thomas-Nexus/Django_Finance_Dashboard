@@ -1,0 +1,64 @@
+{% extends 'inheritance.html' %}
+{% block title %}{% endblock title %}
+{% block scripts %}
+<script>
+    $(document).ready(function(){
+    var ctx = document.getElementById('DXY30').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: {{ x }},
+        datasets: [{
+            label: 'DXY Price - Last 30 Days ($)',
+            data: {{ price }},
+            backgroundColor: [
+                'rgba(156, 57, 255, 0.5)',
+            ],
+            borderColor: [
+                'rgba(156, 57, 255, 0.5)',
+            ],
+            borderWidth: 0.1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                }
+            }]
+        }
+    }
+});
+    });
+</script>
+
+{% endblock scripts %}
+
+{% block content %}
+<center>
+<body style="color:white">
+    </br>
+    <h1 style="color:white">DXY</h1>
+    <h5 style="color:white">PERFORMANCE - 30D</h5>
+
+    {% if performance < 0 %}
+    <h5 style="color:red"><b>{{ performance }}%</b></h5>
+    {% else %}
+    <h5 style="color:green"><b>- {{ performance }}% -</b></h5>
+    {% endif %}
+
+    </br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="btn-text-right">
+                    <button class="btn btn-outline-light"><a style="color:white" href="/dxy">240</a></button>
+                    <button class="btn btn-outline-light"><a style="color:white" href="/dxy30">30</a></button>
+                </div>
+                <canvas id="DXY30" width="300" height="120"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</center>
+{% endblock %}
