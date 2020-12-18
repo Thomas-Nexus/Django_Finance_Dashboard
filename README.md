@@ -32,7 +32,7 @@ Django site utilising the Yahoo Finance API with Chart.JS
     - View asset class performance for both time periods
     - Charts will dynamically update to display the most recent price data.
 
-## Example Screenshot:
+## Example Screenshots:
 
 ![Slide1](https://user-images.githubusercontent.com/72507931/102626800-356ccd00-413f-11eb-9af6-5bbbf6330b33.JPG)
 ![Slide1](https://user-images.githubusercontent.com/72507931/102629885-b4640480-4143-11eb-9a2c-151902c632be.JPG)
