@@ -3,10 +3,10 @@ import numpy as np
 import yfinance as yf
 from matplotlib import pyplot as plt
 from datetime import timedelta, date
-#-----------------------------------------------------------------------------------------------------------------------
+
 End = date.today() + timedelta(2)
 End.strftime('%Y-%m-%d')
-#-----------------------------------------------------------------------------------------------------------------------
+
 def dataframe_240(ticker):
     data = pd.DataFrame(yf.download(ticker, start='2020-01-01', end=End)['Adj Close'])
     fixed = data.tail(240)
@@ -21,7 +21,6 @@ OILPriceList = dataframe_240('CL=F')
 DXYPriceList = dataframe_240('DX=F')
 TLTPriceList = dataframe_240('TLT')
 X_ax = [x for x in range(241)]
-#-----------------------------------------------------------------------------------------------------------------------
 
 def dataframe_30(ticker):
     data = pd.DataFrame(yf.download(ticker, start='2020-01-01', end=End)['Adj Close'])
@@ -37,5 +36,3 @@ OILPriceList_B = dataframe_30('CL=F')
 DXYPriceList_B = dataframe_30('DX=F')
 TLTPriceList_B = dataframe_30('TLT')
 X_ax_B = [x for x in range(31)]
-
-#-----------------------------------------------------------------------------------------------------------------------
