@@ -15,7 +15,8 @@ Django site utilising the Yahoo Finance API with Chart.JS
     - Django 3.1.3
     - Pandas
     - YFinance
-    - JavaScript
+    - Bootstrap
+    - Chart.JS
     - HTML5
     - CSS
 
