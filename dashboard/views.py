@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import *
 from .data import *
 from .performance import SPY, DAX, BTC, GLD, OIL, DXY, TLT, SPY_B, DAX_B, BTC_B, GLD_B, OIL_B, DXY_B, TLT_B
-#-----------------------------------------------------------------------------------------------------------------------
+
 def spy(request):
     SPYprice = PriceList
     x = X_ax
@@ -51,8 +51,6 @@ def tlt(request):
     performance = TLT
     context = {'price': TLTprice, 'x': x, 'performance': performance}
     return render(request, 'tlt.html', context)
-
-#-----------------------------------------------------------------------------------------------------------------------
 
 def spy30(request):
     SPYPrice = PriceList_B
